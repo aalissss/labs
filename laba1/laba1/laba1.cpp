@@ -43,22 +43,23 @@ int main(int argc, char *argv[])
 	if (argc == 1) {
 		inputParam = true;
 	}
-
-	if ((strcmp(argv[1], "true") == 0) || (strcmp(argv[1], "false") == 0)) {
-		if (strcmp(argv[1], "true") == 0) {
-			inputParam = true;
+	else {
+		if ((strcmp(argv[1], "true") == 0) || (strcmp(argv[1], "false") == 0)) {
+			if (strcmp(argv[1], "true") == 0) {
+				inputParam = true;
+			}
+			else {
+				inputParam = false;
+			}
 		}
 		else {
-			inputParam = false;
+			cout << "Error! Parameter must be true or false!" << endl;
+			return -1;
 		}
-	}
-	else {
-		cout << "Error! Parameter must be true or false!" << endl;
-		return -1;
-	}
 
-	if (inputParam) {
-		cout << "Enter a number. The input mustend with the number zero (0): ";
+		if (inputParam) {
+			cout << "Enter a number. The input mustend with the number zero (0): ";
+		}
 	}
 
 	while (true) {
