@@ -41,8 +41,7 @@ int main(int argc, char *argv[])
 	bool inputParam;
 
 	if (argc == 1) {
-		cout << "Error! Required parameter is empty!!!" << endl;
-		return -1;
+		inputParam = true;
 	}
 
 	if ((strcmp(argv[1], "true") == 0) || (strcmp(argv[1], "false") == 0)) {
@@ -76,7 +75,7 @@ int main(int argc, char *argv[])
 	while (!isempty()) {
 		i = pop();
 		if (i > 0) {
-			cout << i << " ";
+			cout << i << endl;
 		}
 	}
 	return 0;
