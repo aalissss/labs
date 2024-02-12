@@ -56,11 +56,11 @@ int main(int argc, char *argv[])
 			cout << "Error! Parameter must be true or false!" << endl;
 			return -1;
 		}
-
-		if (inputParam) {
-			cout << "Enter a number. The input mustend with the number zero (0): ";
-		}
 	}
+	if (inputParam) {
+		cout << "Enter a number. The input mustend with the number zero (0): ";
+	}
+	
 
 	while (true) {
 		cin >> data;
